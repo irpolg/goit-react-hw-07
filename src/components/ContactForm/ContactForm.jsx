@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid';
 import css from './ContactForm.module.css';
 import * as Yup from "yup";
 import { useDispatch } from 'react-redux';
-import { addContact } from '../../redux/contactsSlice';
+import { addContact } from '../../redux/contactsOps';
 
 const validationSchema = Yup.object().shape({
   name:   Yup.string().min(2, "Too Short! Minimum - 2 ").max(50, "Too Long! Maximum - 50 ").required("Required"),
