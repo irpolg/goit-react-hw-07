@@ -20,13 +20,13 @@ export default function FormikForm() {
     return (
         <Formik
             initialValues={{
-                id: "",
+                // id: "",
                 name: "",
                 number: "",
             }}
             onSubmit={(values, actions) => {
                 const newContact = {
-                    id: nanoid(4),
+                    // id: nanoid(4),
                     name: values.name,
                     number: values.number,
                 }

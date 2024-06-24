@@ -1,4 +1,4 @@
-//import { FaRegFaceFrown } from 'react-icons/fa6';
+import { FaRegFaceFrown } from 'react-icons/fa6';
 import css from './ErrorMessage.module.css';
 
 export default function ErrorMessage() {
@@ -6,8 +6,8 @@ export default function ErrorMessage() {
     <div>
       <p className={css.error}>
         Error! Please, reload the page!
-        {/* <br />
-        <FaRegFaceFrown className={css.errorIcon} /> */}
+        <br />
+        <FaRegFaceFrown className={css.errorIcon} />
       </p>
     </div>
   );
